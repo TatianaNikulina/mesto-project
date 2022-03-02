@@ -1,0 +1,17 @@
+.user__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 14px 0 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 40vw;
+}
+@media screen and (min-width: 768px) {
+    .user__description {font-size: 18px;
+    text-align: left;
+    margin-top: 16px;
+    }
+}

@@ -1,0 +1,9 @@
+.button_type-like {
+    display: block;
+    border: none;
+    background-color: white;
+    background-image: url('../../../images/like.svg');
+    background-size: cover;
+    width: 22px;
+    height: 19px;
+}
