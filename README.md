@@ -39,4 +39,4 @@
 
 ## Проект на GitPages:
 
-[Project link](https://tatiananikulina.github.io/mesto-project/)
+[Project link](https://tatiananikulina.github.io/mesto-project/index.html)
