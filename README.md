@@ -39,4 +39,4 @@
 
 ## Проект на GitPages:
 
-[Project link](https://tatiananikulina.github.io/russian-travel/index.html)
+[Project link](https://tatiananikulina.github.io/mesto-project/)
