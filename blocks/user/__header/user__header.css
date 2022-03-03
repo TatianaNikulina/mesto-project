@@ -1,18 +1,4 @@
 .user__header {
-    /*font-weight: 500;*/
-    /*font-size: 27px;*/
-    /*line-height: 32px;*/
     display: flex;
-    /*align-items: baseline;*/
-    /*position: relative;*/
-    /*left: 13px;*/
+    align-items: baseline;
 }
-
-/*@media screen and (min-width: 768px) {*/
-/*    .user__header {*/
-/*        !*left: 0;*!*/
-/*        !*font-size: 42px;*!*/
-/*        !*line-height: 1.14;*!*/
-/*        margin-bottom: 9px;*/
-/*    }*/
-/*}*/

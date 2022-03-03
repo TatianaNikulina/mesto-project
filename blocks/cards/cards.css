@@ -1,11 +1,9 @@
 .cards {
-    /*margin: 36px auto 0;*/
     padding: 36px 19px 0;
 }
 
 @media screen and (min-width: 920px) {
     .cards {
-        margin: 51px auto 0;
-        /*width: 68.75%;*/
+        padding: 51px 0 0;
     }
 }
