@@ -1,8 +1,8 @@
 .card__footer {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 42px);
-    padding: 25px 0 31px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 42px);
+  padding: 25px 0 31px;
 }

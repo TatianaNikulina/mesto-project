@@ -1,11 +1,11 @@
 .user__info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
 }
 
 @media screen and (min-width: 425px) {
-    .user__info {
-        margin: 0 0 0 30px;
-    }
+  .user__info {
+    margin: 0 0 0 30px;
+  }
 }

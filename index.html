@@ -1,105 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="` Проект Место на Яндекс Практикуме" />
     <meta name="keywords" content="html, css, javascript" />
     <meta name="author" content="Татьяна Никулина" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Mesto project</title>
-</head>
-<body class="page">
-<div class="page__container">
+  </head>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <a href="#"
+          ><img src="./images/logo.svg" alt="Логотип" class="header__logo"
+        /></a>
+      </header>
 
-    <header class="header section">
-        <a href="#" ><img src="./images/logo.svg" alt="Логотип" class="header__logo"></a>
-    </header>
-
-    <main class="content">
-
-        <section class="profile section">
-            <div class="user">
-                <img src="./images/avatar.jpeg" alt="Аватар" class="user__avatar">
-                <div class="user__info">
-                    <div class="user__header">
-                        <h1 class="user__name">Жак-Ив Кусто</h1>
-                        <button class="button button_type-edit" type="button"
-                                aria-label="Редактировать профиль"></button>
-                    </div>
-                    <p class="user__description">Исследователь океана</p>
-                </div>
+      <main class="content">
+        <section class="profile">
+          <div class="user">
+            <img src="./images/avatar.jpeg" alt="Аватар" class="user__avatar" />
+            <div class="user__info">
+              <div class="user__header">
+                <h1 class="user__name">Жак-Ив Кусто</h1>
+                <button
+                  class="button button_type_edit"
+                  type="button"
+                  aria-label="Редактировать профиль"
+                ></button>
+              </div>
+              <p class="user__description">Исследователь океана</p>
             </div>
-            <button class="button button_type-add smoothly" type="button"
-                    aria-label="Добавить фото"></button>
+          </div>
+          <button
+            class="button button_type_add"
+            type="button"
+            aria-label="Добавить фото"
+          ></button>
         </section>
 
-        <section class="cards section" aria-label="Фотографии">
-            <ul class="cards__list">
-                <li class="card">
-                <img src="./images/karachaevsk.jpeg" alt="Карачаевск" class="card__image">
-                <div class="card__footer">
-                    <h2 class="card__header">Карачаевск</h2>
-                    <button class="button button_type-like" type="button" aria-label="Добавить лайк"></button>
-                </div>
-                </li>
-                <li class="card">
-                    <img src="./images/elbrus.png" alt="Эльбрус" class="card__image">
-                    <div class="card__footer">
-                        <h2 class="card__header">Эльбрус</h2>
-                        <button class="button button_type-like button_type-like_active" type="button" aria-label="Добавить лайк"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/dombai.png" alt="Домбай" class="card__image">
-                    <div class="card__footer">
-                        <h2 class="card__header">Домбай</h2>
-                        <button class="button button_type-like" type="button" aria-label="Добавить лайк"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/karachaevsk.jpeg" alt="Карачаевск" class="card__image">
-                    <div class="card__footer">
-                        <h2 class="card__header">Карачаевск</h2>
-                        <button class="button button_type-like" type="button" aria-label="Добавить лайк"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/elbrus.png" alt="Эльбрус" class="card__image">
-                    <div class="card__footer">
-                        <h2 class="card__header">Эльбрус</h2>
-                        <button class="button button_type-like" type="button" aria-label="Добавить лайк"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src="./images/dombai.png" alt="Домбай" class="card__image">
-                    <div class="card__footer">
-                        <h2 class="card__header">Домбай</h2>
-                        <button class="button button_type-like" type="button" aria-label="Добавить лайк"></button>
-                    </div>
-                </li>
-            </ul>
+        <section class="cards" aria-label="Фотографии">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/karachaevsk.jpeg"
+                alt="Карачаевск"
+                class="card__image"
+              />
+              <div class="card__footer">
+                <h2 class="card__header">Карачаевск</h2>
+                <button
+                  class="button button_type_like"
+                  type="button"
+                  aria-label="Добавить лайк"
+                ></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/elbrus.png"
+                alt="Эльбрус"
+                class="card__image"
+              />
+              <div class="card__footer">
+                <h2 class="card__header">Эльбрус</h2>
+                <button
+                  class="button button_type_like"
+                  type="button"
+                  aria-label="Добавить лайк"
+                ></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/dombai.png" alt="Домбай" class="card__image" />
+              <div class="card__footer">
+                <h2 class="card__header">Домбай</h2>
+                <button
+                  class="button button_type_like"
+                  type="button"
+                  aria-label="Добавить лайк"
+                ></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/karachaevsk.jpeg"
+                alt="Карачаевск"
+                class="card__image"
+              />
+              <div class="card__footer">
+                <h2 class="card__header">Карачаевск</h2>
+                <button
+                  class="button button_type_like"
+                  type="button"
+                  aria-label="Добавить лайк"
+                ></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/elbrus.png"
+                alt="Эльбрус"
+                class="card__image"
+              />
+              <div class="card__footer">
+                <h2 class="card__header">Эльбрус</h2>
+                <button
+                  class="button button_type_like"
+                  type="button"
+                  aria-label="Добавить лайк"
+                ></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/dombai.png" alt="Домбай" class="card__image" />
+              <div class="card__footer">
+                <h2 class="card__header">Домбай</h2>
+                <button
+                  class="button button_type_like"
+                  type="button"
+                  aria-label="Добавить лайк"
+                ></button>
+              </div>
+            </li>
+          </ul>
         </section>
+      </main>
 
-    </main>
-
-    <footer class="footer section">
+      <footer class="footer">
         <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
-    </footer>
-</div>
+      </footer>
+    </div>
 
-<section class="popup" aria-label="Редактировать профиль">
-    <div class="popup__container">
-        <button class="button button_type-close" type="button"
-                aria-label="Закрыть окно"></button>
+    <div class="popup" aria-label="Редактировать профиль">
+      <div class="popup__container">
+        <button
+          class="button button_type_close"
+          type="button"
+          aria-label="Закрыть окно"
+        ></button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" name="edit-profile-form">
-                <input type="text" class="popup__input" placeholder="Жак-Ив Кусто" name="input-name" required>
-                <input type="text" class="popup__input" placeholder="Исследователь океана" name="input-description" required>
-            <button type="submit" class="button popup__save" name='submit-button'>Сохранить</button>
+          <input
+            id="profile-name"
+            type="text"
+            class="popup__input"
+            placeholder="Имя Фамилия"
+            name="input-name"
+            required
+          />
+          <input
+            id="profile-description"
+            type="text"
+            class="popup__input"
+            placeholder="Род деятельности"
+            name="input-description"
+            required
+          />
+          <button type="submit" class="button popup__save" name="submit-button">
+            Сохранить
+          </button>
         </form>
+      </div>
     </div>
-</section>
-
-</body>
+  </body>
 </html>

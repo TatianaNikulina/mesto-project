@@ -1,13 +1,14 @@
 .footer {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 19px 36px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 19px 36px;
+  width: calc(100% - 38px);
 }
 
 @media screen and (min-width: 920px) {
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
 }
-
