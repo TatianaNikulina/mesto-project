@@ -13,11 +13,16 @@
 @import url(../blocks/user/user.css);
 @import url(../blocks/user/__avatar/user__avatar.css);
 @import url(../blocks/button/button.css);
-@import url(../blocks/button/_type_edit/button_type_edit.css);
+@import url(../blocks/button/_type/button_type_add.css);
+@import url(../blocks/button/_type/button_type_close.css);
+@import url(../blocks/button/_type/button_type_edit.css);
+@import url(../blocks/button/_type/button_type_like.css);
+@import url(../blocks/button/_type/_active/button_type_like_active.css);
+/* @import url(../blocks/button/_type_edit/button_type_edit.css);
 @import url(../blocks/button/_type_add/button_type_add.css);
 @import url(../blocks/button/_type_like/button_type_like.css);
 @import url(../blocks/button/_type_like/_active/button_type_like_active.css);
-@import url(../blocks/button/_type_close/button_type_close.css);
+@import url(../blocks/button/_type_close/button_type_close.css); */
 
 @import url(../blocks/user/__description/user__description.css);
 @import url(../blocks/user/__header/user__header.css);
