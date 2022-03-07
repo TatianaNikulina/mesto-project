@@ -1,42 +1,45 @@
-## Название:
+## Project name:
 
-Проектная работа «Mesto»
-
----
-
-## Описание:
-
-Работа с макетом, адаптивная вёрстка, интерактивные элементы, работа с формами
+Project «Mesto»
 
 ---
 
-## Использованные технологии:
-- формы: input, select, label, placeholder
-- модальные окна PopUp
-- работа с FIGMA,
-- HTML,
-- CSS,
-- позиционирование элементов,
-- методология БЭМ,
-- файловая структура Nested,
-- flexbox,
+## Description:
+
+Work with the layout, adaptive responsive layout, interactive elements, work with forms
+
+The work was done using HTML5, CSS3, Javascript. The layout is adaptive, responsive, flexbox and grid layout technologies are used. BEM technology is applied. The files are organized according to Nested BEM. Webpack, Babel transpilation, CSS minifying.
+
+---
+
+## Technologies:
+
+- forms: input, select, label, placeholder
+- modal windows PopUp
+- work with FIGMA,
+- HTML5,
+- CSS3,
+- elements positioning,
+- BEM methodology,
+- Nested file structure,
+- flexbox layout,
 - grid layout,
-- система контроля версий GitHub
+- version control system GitHub
 
 ---
 
-## Автор:
+## Author:
 
-Никулина Татьяна
+Nikulina Tatiana
 
 ---
 
-## Номер спринта:
+## Sprint number:
 
 2
 
 ---
 
-## Проект на GitPages:
+## Project on GitPages:
 
 [Project link](https://tatiananikulina.github.io/mesto-project/index.html)
