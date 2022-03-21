@@ -22,6 +22,11 @@ Work with the layout, adaptive responsive layout, interactive elements, work wit
 - Nested file structure,
 - flexbox layout,
 - grid layout,
+- javascript:
+  - opening, closing a modal window
+  - editing of information
+  - add, remove and like cards
+  - opening a popup with a picture
 - version control system GitHub
 
 ---
@@ -34,7 +39,7 @@ Nikulina Tatiana
 
 ## Sprint number:
 
-2
+3
 
 ---
 

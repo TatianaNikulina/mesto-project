@@ -133,7 +133,7 @@
       </footer>
     </div>
 
-    <div class="popup" aria-label="Редактировать профиль">
+    <div class="popup popup_type_edit" aria-label="Редактировать профиль">
       <div class="popup__container">
         <button
           class="button button_type_close"
@@ -168,5 +168,39 @@
         </form>
       </div>
     </div>
+
+    <div class="popup popup_type_add" aria-label="Добавить новую карточку">
+      <div class="popup__container">
+        <button
+          class="button button_type_close"
+          type="button"
+          aria-label="Закрыть окно"
+        ></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form" name="add-card-form">
+          <input
+            id="add-card-name"
+            type="text"
+            class="popup__input"
+            placeholder="Название"
+            name="input-name"
+            required
+          />
+          <input
+            id="picture-link"
+            type="url"
+            class="popup__input"
+            placeholder="Ссылка на картинку"
+            name="input-link"
+            required
+          />
+          <button class="button popup__save" type="submit" aria-label="Создать">
+            Создать
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
