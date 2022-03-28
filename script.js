@@ -5,6 +5,7 @@ const editPopup = document.querySelector(".popup_type_edit");
 
 function openEditPopup() {
   editPopup.classList.add("popup_opened");
+  
 }
 editButton.addEventListener("click", openEditPopup);
 
@@ -38,3 +39,5 @@ likeButton.forEach((btn) => {
     console.log(evt.target);
   });
 });
+
+//
