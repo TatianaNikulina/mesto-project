@@ -1,0 +1,8 @@
+.popup__container_img {
+  /* max-width: 75vw;
+  max-height: 75vh; */
+  width: auto;
+  background-color: initial;
+  border-radius: 0;
+  padding: 0;
+}
