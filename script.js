@@ -1,5 +1,6 @@
 const editButton = document.querySelector(".button_type_edit");
 const editPopup = document.querySelector(".popup_type_edit");
+const editPopupForm = editPopup.querySelector(".popup__form");
 
 const addButton = document.querySelector(".button_type_add");
 const addPopup = document.querySelector(".popup_type_add");
@@ -48,7 +49,6 @@ addButton.addEventListener("click", () => {
 // });
 
 // close popups
-
 function closePopup() {
   document.querySelectorAll(".popup").forEach((popup) => {
     popup.classList.remove("popup_opened");
@@ -57,6 +57,17 @@ function closePopup() {
 closeButton.forEach((btn) => {
   btn.addEventListener("click", closePopup);
 });
+
+// saving changed information in editPopup
+
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  userName.textContent = inputName.value;
+  userDescription.textContent = inputDescription.value;
+  closePopup();
+}
+
+editPopupForm.addEventListener("submit", formSubmitHandler);
 
 // like - dislike
 const likeButton = document.querySelectorAll(".button_type_like");
