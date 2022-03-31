@@ -1,7 +1,8 @@
 .card__image {
-  max-width: 282px;
-  max-height: 282px;
+  display: block;
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
-  /*object-fit: cover;*/
-  /*object-position: bottom center;*/
+  /* object-position: bottom center; */
 }

@@ -41,95 +41,7 @@
         </section>
 
         <section class="cards" aria-label="Фотографии">
-          <ul class="cards__list">
-            <li class="card">
-              <button
-                class="button card__delete"
-                type="button"
-                aria-label="Удалить карточку"
-              ></button>
-              <img
-                src="./images/karachaevsk.jpeg"
-                alt="Карачаевск"
-                class="card__image"
-              />
-              <div class="card__footer">
-                <h2 class="card__header">Карачаевск</h2>
-                <button
-                  class="button button_type_like"
-                  type="button"
-                  aria-label="Добавить лайк"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/elbrus.png"
-                alt="Эльбрус"
-                class="card__image"
-              />
-              <div class="card__footer">
-                <h2 class="card__header">Эльбрус</h2>
-                <button
-                  class="button button_type_like"
-                  type="button"
-                  aria-label="Добавить лайк"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/dombai.png" alt="Домбай" class="card__image" />
-              <div class="card__footer">
-                <h2 class="card__header">Домбай</h2>
-                <button
-                  class="button button_type_like"
-                  type="button"
-                  aria-label="Добавить лайк"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/karachaevsk.jpeg"
-                alt="Карачаевск"
-                class="card__image"
-              />
-              <div class="card__footer">
-                <h2 class="card__header">Карачаевск</h2>
-                <button
-                  class="button button_type_like"
-                  type="button"
-                  aria-label="Добавить лайк"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/elbrus.png"
-                alt="Эльбрус"
-                class="card__image"
-              />
-              <div class="card__footer">
-                <h2 class="card__header">Эльбрус</h2>
-                <button
-                  class="button button_type_like"
-                  type="button"
-                  aria-label="Добавить лайк"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/dombai.png" alt="Домбай" class="card__image" />
-              <div class="card__footer">
-                <h2 class="card__header">Домбай</h2>
-                <button
-                  class="button button_type_like"
-                  type="button"
-                  aria-label="Добавить лайк"
-                ></button>
-              </div>
-            </li>
-          </ul>
+          <ul class="cards__list"></ul>
         </section>
       </main>
 
@@ -217,6 +129,25 @@
         <h2 class="popup__caption"></h2>
       </div>
     </div>
+
+    <template id="card-template">
+      <li class="card">
+        <button
+          class="button card__delete"
+          type="button"
+          aria-label="Удалить карточку"
+        ></button>
+        <img src="#" alt="" class="card__image" />
+        <div class="card__footer">
+          <h2 class="card__header"></h2>
+          <button
+            class="button button_type_like"
+            type="button"
+            aria-label="Добавить лайк"
+          ></button>
+        </div>
+      </li>
+    </template>
 
     <script src="script.js"></script>
   </body>

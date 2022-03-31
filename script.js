@@ -37,17 +37,6 @@ addButton.addEventListener("click", () => {
   openPopup(addPopup);
 });
 
-// // open imagePopup
-// cardImage.forEach((img) => {
-//   img.addEventListener("click", () => {
-//     console.log(img);
-//     console.log(img.src);
-//     // openPopup(imagePopup);
-//     // img.src = image.src;
-//     // imageCaption.textContent = cardHeader.textContent;
-//   });
-// });
-
 // close popups
 function closePopup() {
   document.querySelectorAll(".popup").forEach((popup) => {
@@ -69,13 +58,71 @@ function formSubmitHandler(evt) {
 
 editPopupForm.addEventListener("submit", formSubmitHandler);
 
-// like - dislike
-const likeButton = document.querySelectorAll(".button_type_like");
-likeButton.forEach((btn) => {
-  btn.addEventListener("click", function (evt) {
+// cards
+
+function createCard(cardName, cardLink) {
+  const cardTemplate = document.querySelector("#card-template").content;
+  const card = cardTemplate.querySelector(".card").cloneNode(true); // клонируем содержимое тега template
+
+  card.querySelector(".card__image").src = cardLink; // наполняем содержимым
+  card.querySelector(".card__image").alt = cardName;
+  card.querySelector(".card__header").textContent = cardName;
+
+  // like - dislike
+  const likeButton = card.querySelector(".button_type_like");
+  likeButton.addEventListener("click", function (evt) {
     evt.target.classList.toggle("button_active");
-    console.log(evt.target);
+    // console.log(evt.target);
   });
+
+  //delete card
+  const deleteButton = card.querySelector(".card__delete");
+  deleteButton.addEventListener("click", function (evt) {
+    evt.target.closest(".card").remove();
+  });
+
+  return card;
+}
+
+const initialCards = [
+  {
+    name: "Тихий океан",
+    link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/tihiy_1.jpg",
+  },
+  {
+    name: "Атлантический океан",
+    link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/atlanticheskiy.jpg",
+  },
+  {
+    name: "Северный ледовитый океан",
+    link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/severnyy_ledovityy_1.jpg",
+  },
+  {
+    name: "Индийский океан",
+    link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/indiyskiy.jpg",
+  },
+  {
+    name: "Тихий океан",
+    link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/tihiy.jpg",
+  },
+  {
+    name: "Индийский океан",
+    link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/indiyskiy_1.jpg",
+  },
+];
+
+const cardsList = document.querySelector(".cards__list");
+initialCards.reverse().forEach((card) => {
+  cardsList.prepend(createCard(card.name, card.link));
 });
 
-//
+// // open imagePopup
+// cardImage.forEach((img) => {
+//   img.addEventListener("click", () => {
+//     console.log(img);
+//     console.log(img.src);
+//     // openPopup(imagePopup);
+//     // img.src = image.src;
+//     // imageCaption.textContent = cardHeader.textContent;
+//   });
+// });
