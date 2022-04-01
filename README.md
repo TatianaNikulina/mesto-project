@@ -24,7 +24,7 @@ Work with the layout, adaptive responsive layout, interactive elements, work wit
 - grid layout,
 - javascript:
   - opening, closing a modal window
-  - editing of information
+  - editing and saving information
   - add, remove and like cards
   - opening a popup with a picture
 - version control system GitHub
