@@ -6,27 +6,35 @@ const addButton = document.querySelector(".button_type_add");
 const addPopup = document.querySelector(".popup_type_add");
 const addPopupForm = addPopup.querySelector(".popup__form");
 
-const closeButton = document.querySelectorAll(".button_type_close");
+const closeButtons = document.querySelectorAll(".button_type_close");
 
 const userName = document.querySelector(".user__name");
 const userDescription = document.querySelector(".user__description");
 const inputName = document.querySelector("#profile-name");
 const inputDescription = document.querySelector("#profile-description");
 
+const cardsList = document.querySelector(".cards__list");
+
 const inputCardName = document.querySelector("#card-name");
 const inputCardLink = document.querySelector("#card-link");
+
+const cardTemplate = document.querySelector("#card-template").content;
+
+const imagePopup = document.querySelector(".popup_type_image");
+const image = document.querySelector(".popup__image");
+const imageCaption = document.querySelector(".popup__caption");
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
   if (popup === editPopup) {
-    inputName.value = userName.textContent;
-    inputDescription.value = userDescription.textContent;
   }
 }
 
 //open editPopup
 editButton.addEventListener("click", () => {
   openPopup(editPopup);
+  inputName.value = userName.textContent;
+  inputDescription.value = userDescription.textContent;
 });
 
 // open addPopup
@@ -40,7 +48,7 @@ function closePopup() {
     popup.classList.remove("popup_opened");
   });
 }
-closeButton.forEach((btn) => {
+closeButtons.forEach((btn) => {
   btn.addEventListener("click", closePopup);
 });
 
@@ -58,7 +66,6 @@ editPopupForm.addEventListener("submit", editFormSubmitHandler);
 // cards
 
 function createCard(cardName, cardLink) {
-  const cardTemplate = document.querySelector("#card-template").content;
   const card = cardTemplate.querySelector(".card").cloneNode(true); // клонируем содержимое тега template
 
   card.querySelector(".card__image").src = cardLink; // наполняем содержимым
@@ -81,9 +88,6 @@ function createCard(cardName, cardLink) {
   // open imagePopup
   const cardImage = card.querySelector(".card__image");
   const cardHeader = card.querySelector(".card__header");
-  const imagePopup = document.querySelector(".popup_type_image");
-  const image = document.querySelector(".popup__image");
-  const imageCaption = document.querySelector(".popup__caption");
 
   cardImage.addEventListener("click", () => {
     openPopup(imagePopup);
@@ -121,8 +125,6 @@ const initialCards = [
     link: "https://www.ap22.ru/netcat_files/userfiles/2019/06/okeany/indiyskiy_1.jpg",
   },
 ];
-
-const cardsList = document.querySelector(".cards__list");
 
 initialCards.reverse().forEach((card) => {
   cardsList.prepend(createCard(card.name, card.link));
