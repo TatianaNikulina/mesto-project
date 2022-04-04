@@ -1,3 +1,5 @@
+const popups = document.querySelectorAll(".popup");
+
 const editButton = document.querySelector(".button_type_edit");
 const editPopup = document.querySelector(".popup_type_edit");
 const editPopupForm = editPopup.querySelector(".popup__form");
@@ -26,8 +28,6 @@ const imageCaption = document.querySelector(".popup__caption");
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
-  if (popup === editPopup) {
-  }
 }
 
 //open editPopup
@@ -44,7 +44,7 @@ addButton.addEventListener("click", () => {
 
 // close popups
 function closePopup() {
-  document.querySelectorAll(".popup").forEach((popup) => {
+  popups.forEach((popup) => {
     popup.classList.remove("popup_opened");
   });
 }
